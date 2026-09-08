@@ -155,13 +155,13 @@ h1{font-family:var(--display);font-weight:800;letter-spacing:-.032em;line-height
 
 /* ---------------- home hero ---------------- */
 .hero{padding:clamp(40px,7vw,88px) 0 clamp(26px,3vw,38px)}
-.herogrid{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:clamp(26px,4vw,52px);align-items:center}
+.herogrid{display:grid;grid-template-columns:minmax(0,1fr) clamp(160px,22vw,220px);gap:clamp(26px,4vw,52px);align-items:center}
 @media (max-width:760px){.herogrid{grid-template-columns:1fr}.portrait{max-width:180px}}
 .hero h1{font-size:clamp(2.7rem,7.8vw,5rem);line-height:.9;margin-bottom:14px;letter-spacing:-.055em}
-.tagline{font-family:var(--mono);font-size:.79rem;letter-spacing:.02em;color:var(--ink-60);
+.tagline{display:flex;flex-wrap:wrap;align-items:center;column-gap:6px;row-gap:2px;font-family:var(--mono);font-size:.79rem;letter-spacing:.02em;color:var(--ink-60);
   margin:0 0 22px;line-height:1.9}
-.tagline span{white-space:nowrap}
-.tagline i{font-style:normal;color:var(--ink-40);padding:0 6px}
+.tagline span{white-space:normal}
+.tagline i{font-style:normal;color:var(--ink-40)}
 .lede{font-size:clamp(1.04rem,1.4vw,1.26rem);max-width:58ch;margin:0 0 26px;color:var(--ink-80)}
 .lede em{font-style:italic;color:var(--indigo);font-weight:600}
 
