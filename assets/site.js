@@ -8,6 +8,9 @@
   root.setAttribute('data-theme', isDarkTheme ? 'dark' : 'light');
 
   var toggle = document.querySelector('.theme-toggle');
+  var menuButton = document.querySelector('.menu-toggle');
+  var nav = document.querySelector('.navlinks');
+
   function moonIcon() {
     return '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 0 1 11.2 3a9 9 0 1 0 9.8 9.8Z"/></svg>';
   }
@@ -29,6 +32,15 @@
       root.setAttribute('data-theme', nextTheme);
       localStorage.setItem('theme', nextTheme);
       updateThemeButton();
+    });
+  }
+
+  if (menuButton && nav) {
+    menuButton.addEventListener('click', function () {
+      var isOpen = nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      menuButton.title = isOpen ? 'Close navigation menu' : 'Open navigation menu';
     });
   }
 
