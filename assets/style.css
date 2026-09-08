@@ -134,6 +134,7 @@ h1{font-family:var(--display);font-weight:800;letter-spacing:-.032em;line-height
 .chip.solid{background:linear-gradient(135deg,var(--indigo),#355f98);color:#fff;border-color:transparent}
 .chip.solid:hover{background:linear-gradient(135deg,#1a3765,#203f6a);border-color:transparent}
 .chip svg{width:15px;height:15px;display:block;flex-shrink:0}
+.chip img{width:15px;height:15px;display:block;flex-shrink:0}
 @media (max-width:760px){
   .chips{gap:8px}
   .chip{padding:9px 10px}
@@ -254,6 +255,8 @@ footer{border-top:1px solid var(--rule);padding:32px 0 50px;margin-top:10px}
 .social-strip a{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--paper-2);border:1px solid var(--rule);color:var(--ink);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;background-image:linear-gradient(180deg,rgba(255,255,255,.15),transparent)}
 .social-strip a:hover{transform:translateY(-2px);box-shadow:var(--shadow-soft);border-color:rgba(34,70,120,.3)}
 .social-strip svg{width:15px;height:15px;display:block}
+.social-strip img{width:15px;height:15px;display:block}
+body[data-theme="dark"] .chip img,body[data-theme="dark"] .social-strip img{filter:invert(1)}
 @media (max-width:620px){
   .foot{flex-direction:column;align-items:flex-start}
   .social-strip{justify-content:flex-start}
