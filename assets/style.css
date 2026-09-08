@@ -304,7 +304,7 @@ section.first{border-top:0}
 footer{border-top:1px solid var(--rule);padding:32px 0 50px;margin-top:10px}
 .page-links{padding:26px 0 10px;border-top:1px solid var(--rule)}
 .page-links nav{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.page-links a{font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;color:var(--ink-60);border:1px solid var(--rule);border-radius:999px;padding:8px 12px;background:var(--paper-3);transition:transform .18s ease,background .18s ease,color .18s ease,border-color .18s ease}
+.page-links a{display:inline-flex;align-items:center;font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;color:var(--ink);border:1px solid rgba(34,70,120,.28);border-radius:6px;padding:8px 12px;background:var(--paper-3);box-shadow:0 3px 10px rgba(27,32,46,.08);transition:transform .18s ease,background .18s ease,color .18s ease,border-color .18s ease,box-shadow .18s ease}
 .page-links a:hover{color:var(--paper);background:var(--indigo);border-color:var(--indigo);transform:translateY(-1px)}
 .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   font-family:var(--mono);font-size:.71rem;color:var(--ink-40);letter-spacing:.03em;align-items:center}
