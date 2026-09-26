@@ -165,19 +165,34 @@ h1{font-family:var(--display);font-weight:800;letter-spacing:-.032em;line-height
 .lede{font-size:clamp(1.04rem,1.4vw,1.26rem);max-width:58ch;margin:0 0 26px;color:var(--ink-80)}
 .lede em{font-style:italic;color:var(--indigo);font-weight:600}
 
-.portrait{position:relative;aspect-ratio:1/1.12;background:linear-gradient(180deg,var(--paper-2),var(--paper-3));
-  border:1px solid var(--rule);overflow:hidden;border-radius:20px;box-shadow:var(--shadow);isolation:isolate}
+.portrait{position:relative;aspect-ratio:1/1;background:linear-gradient(180deg,var(--paper-2),var(--paper-3));
+  border:1px solid var(--rule);overflow:hidden;border-radius:50%;box-shadow:var(--shadow);isolation:isolate}
 .portrait::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(34,70,120,.18),transparent 45%,rgba(176,122,40,.12));z-index:1;pointer-events:none}
 .portrait img{width:100%;height:100%;object-fit:cover;filter:saturate(1.02) contrast(1.02)}
 .monogram{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);
   font-weight:800;font-size:3.2rem;letter-spacing:-.04em;color:var(--ink-40);z-index:0}
 @media (max-width:760px){
   .herogrid{position:relative}
-  .portrait{position:absolute;top:48px;right:0;width:112px;max-width:none;aspect-ratio:1;border-radius:14px}
-  .hero h1{max-width:calc(100% - 126px);padding-right:0}
+  .portrait{
+    position:absolute;
+    top:48px;
+    right:8px;
+    width:140px;
+    max-width:none;
+    aspect-ratio:1;
+    border-radius:50%;
+  }
+  .hero h1{
+    max-width:calc(100% - 140px);
+    padding-right:0;
+  }
 }
 @media (max-width:480px){
-  .portrait{top:46px;width:96px}
+  .portrait{
+    top:46px;
+    right:8px;
+    width:118px;
+  }
 }
 
 /* ---------------- chips ---------------- */
